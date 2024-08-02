@@ -10,6 +10,8 @@ html {
 nav {
 	background-color: black;
 	height: 60px;
+	width: 100%;
+	position: fixed;
 }
 
 li a {
@@ -43,11 +45,26 @@ ul {
 	}
 }
 
+.podnav {
+	height: 60px;
+	width: 100%;
+}
+
+#obrazy {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	flex-shrink: 2;
+}
 
 .ObrazPodpis {
 	border: black 0.1rem solid;
-	width: 30%;
 	display: inline-flex;
+	flex-basis: 20%;
+	flex-shrink: 2;
+	flex-grow: 3;
+	max-width: 500px;
 	flex-direction: column;
 	padding: 0.6rem;
 	margin: 0.3rem;
@@ -67,7 +84,7 @@ ul {
 	}
 }
 
-.stopka {
+footer {
 	display: flex;
 	margin: 10px auto;
 	height: 2rem;
@@ -77,6 +94,8 @@ ul {
 	background-color: sandybrown;
 	width: 25%;
 	p {
+		font-family: sans-serif;
+		flex-shrink: 3;
 		margin: auto;
 		a {
 			text-decoration: none;
