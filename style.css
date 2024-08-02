@@ -66,3 +66,20 @@ ul {
 		padding: 0.2rem;
 	}
 }
+
+footer {
+	display: flex;
+	margin: 10px auto;
+	height: 2rem;
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 0.7rem;
+	background-color: sandybrown;
+	width: 25%;
+	p {
+		margin: auto;
+		a {
+			text-decoration: none;
+		}
+	}
+}
