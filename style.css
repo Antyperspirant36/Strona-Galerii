@@ -6,7 +6,7 @@
 html {
 	background-image: linear-gradient(to right, #ffc800, #b06802, #d14a19, #ff425f, #ff0080);
 }
-/*Navbar*/
+
 nav {
 	background-color: black;
 	height: 60px;
@@ -59,21 +59,22 @@ ul {
 }
 
 .ObrazPodpis {
-	border: black 0.1rem solid;
 	display: inline-flex;
 	flex-basis: 20%;
 	flex-shrink: 2;
 	flex-grow: 3;
-	max-width: 500px;
 	flex-direction: column;
+	max-width: 500px;
 	padding: 0.6rem;
 	margin: 0.3rem;
 	background-color: wheat;
+	border: black 0.1rem solid;
 	border-radius: 1.25rem;
 	text-align: center;
 	img {
 		height: 18.75rem;
 		border-radius: 1rem;
+		border: 3px rgb(162, 95, 0) solid;
 	}
 	p {
 		font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -84,19 +85,41 @@ ul {
 	}
 }
 
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 340px) {
+	.ObrazPodpis {
+		max-width: 330px;
+		padding: 0.4rem;
+		img {
+			height: 12rem;
+		}
+	}
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+	.ObrazPodpis {
+		max-width: 500px;
+		img {
+			height: 18.75rem;
+		}
+	}
+}
+
 footer {
 	display: flex;
 	margin: 10px auto;
-	height: 2rem;
+	height: 2.5rem;
 	text-align: center;
 	border: 1px solid black;
 	border-radius: 0.7rem;
 	background-color: sandybrown;
-	width: 25%;
+	width: 50%;
 	p {
 		font-family: sans-serif;
 		flex-shrink: 3;
 		margin: auto;
+		text-wrap: pretty;
 		a {
 			text-decoration: none;
 		}
