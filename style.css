@@ -97,7 +97,7 @@ ul {
 }
 
 /* Large devices such as laptops (1024px and up) */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1200px) {
 	.ObrazPodpis {
 		max-width: 500px;
 		img {
